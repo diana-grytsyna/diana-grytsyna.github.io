@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.block16{
+    background-color: #77a7bf;
+    height: 250px;
+    padding-top: 80px;
+    text-align: right;
+}
+.blockXY{
+    background-color: white;
+    height: 100px;
+    padding: 20px;
+}
+
+
+#block2{
+     background-color: #e3c88d;
+     height: 400px;
+     padding: 20px;
+     text-align: right;
+
+}
+#block4{
+    padding: 20px;
+    background-color: #e3c88d;
+    height: 500px;
+    text-align: right;
+}
+#block3{
+    padding: 20px 30px 30px 30px;
+    text-align: right;
+}
+#block5{
+    background-color: aquamarine;
+    padding: 0;
+    height: 100px;
+    padding: 10px;
+}
