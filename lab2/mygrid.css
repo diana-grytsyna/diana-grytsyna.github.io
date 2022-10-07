@@ -1,0 +1,131 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "div1 div1"
+      "div235 div4"
+      "div6 div6";
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0px;
+    height: 100vh;
+    margin: 0;
+    }
+#div1{
+    padding-left: 30px;
+    background-color: #469189;
+    grid-area: div1;
+    display: grid;
+    grid-template-areas: 
+      "divX nav-div";
+    grid-template-rows: 100%;
+    grid-template-columns: 1.5fr 3.5fr;
+    grid-gap: 0px;
+    height: 100%;
+}    
+#div235{
+    grid-area: div235;
+    display: grid;
+    grid-template-areas: 
+      "div2 div3"
+      "div5 div5";
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0px;
+    height: 100%;
+    margin: 0;
+}
+#div4{
+    background-color: #aab5b4;
+    grid-area: div4;
+    text-align: right;
+    padding: 10px;
+}
+#div6{
+    padding-left: 30px;
+    background-color: #469189;
+    grid-area: div6;
+    display: grid;
+    grid-template-areas: 
+      "divY divT6";
+    grid-template-rows: 100%;
+    grid-template-columns: 1.5fr 3.5fr;
+    grid-gap: 0px;
+    height: 100%;
+}
+#div2{
+    background-color: #aab5b4;
+    grid-area: div2;
+    text-align: right;
+    padding: 10px;
+}
+#div3{
+    background-color: #5fada6;
+    grid-area: div3;
+    text-align: right;
+    padding: 10px;
+}
+#div5{
+    background-color: #526664;
+    grid-area: div5;
+    padding: 10px;
+}
+#divX{
+    background-color: white;
+    grid-area: divX;
+    height: 40%;
+    margin-top: 15%;
+    text-align: right;
+
+}
+#divY{
+    background-color: white;
+    grid-area: divY;
+    height: 40%;
+    margin-top: 15%;
+}
+#divT6{
+    
+    grid-area: divT6;
+    height: 40%;
+    width:75%;
+    margin-left: 23%;
+    margin-top: 6%;
+    text-align: right;
+}
+#nav-div{
+    grid-area: nav-div;
+    margin-top: 7%;
+    display: grid;
+    grid-template-areas: 
+      "divEmpty navigation";
+    grid-template-rows: 100%;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 0px;
+    height: 100%;
+
+}
+#navigation{
+    grid-area: navigation;
+    
+}
+#textX{
+margin-right: 20px;
+ color: #526664;
+ }
+#text2, #text4{
+    color:#526664;
+ }
+#text5{
+    color:white;
+}
+ #textY{
+    color: #526664;
+    margin-left: 20px;
+}
+
+#text3{
+    color:white;
+}
+#text6{
+    color: white;
+}
