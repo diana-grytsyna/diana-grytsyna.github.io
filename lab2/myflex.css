@@ -7,13 +7,13 @@ body{
     height: 25vh;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #6a4e73;
 }
 #divX{
     height: 40%;
-    width: 30%;
+    width: 400px;
     background-color: #e6e1ca;
     text-align: right;
 }
@@ -59,26 +59,22 @@ body{
     display: flex;
     height: 25vh;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #6a4e73;
     justify-content: space-between;
+    
 }
 #divY{
     height: 40%;
-    width: 30%;
+    width: 400px;
     background-color: #e6e1ca;
 }
 #divT6{
-    height: 50%;
     width: 50%;
-    margin-right: 10px;
     text-align: right;
 }
-#divtext6{
-    height: 40%;
-    width: 30%;
-    background-color: #e6e1ca;
-}
+
 
 #textX{
     margin-right: 20px;
@@ -94,13 +90,7 @@ body{
         color:#3a333d;
         margin-left: 20px;
     }
-    #divtext6{
-        position: absolute;
-        left: 40%;
-        top:30%;
-        text-align: right;
-        padding-right: 10px;
-    }
+   
 #text3{
     color: #3a333d;
 }
