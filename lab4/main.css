@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    
+}
+p, h2, h5{
+    font-family: 'Consolas';
+}
+header{
+    height: 10vh;
+    background-color: #F0EEEE;
+}
+#central-image{
+    width: 100%;
+}
+#header-container{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.header-cols{
+    height: 10vh;
+    position: relative;
+}
+#header-cols-content1{
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+#header-cols-content2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+#menu-icon{
+    height: 30px;
+}
+#main-text-container{
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+.main-content{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+.main-info{
+    border: 4px solid orange;
+    height: 20vh;
+    position: relative;
+}
+.column-text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+.main-icons{
+   position: absolute;
+   top: 0%;
+   width: 70px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+footer{
+    height: 15vh;
+    background-color: #2E2C2C;
+    position: relative;
+}
+.footer-text{
+   width: 80%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.white-text{
+    color: white;
+}
+.transform-scale:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.transform-scale{
+    transform: scale(1);
+    transition: 0.5s;
+}  
+
+@media (max-width: 900px){
+    #header-container{
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+    .main-content{
+        padding: 5vh;
+    }
+    #main-text-container{
+        padding-left: 5vh;
+        padding-right: 5vh;
+        text-align: center;
+    }
+}
+@media (min-width: 1700px){
+    .main-icons{
+        position: absolute;
+        top: 0%;
+        width: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     }
+     #main-text-container{
+        padding-left: 20vh;
+        padding-right: 20vh;
+        padding-bottom: 5vh;
+        text-align: center;
+    }
+}
+@media(max-height:420px){
+    .main-icons{
+        position: absolute;
+        top: -20%;
+        width: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     }
+}
