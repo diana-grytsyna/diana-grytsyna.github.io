@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Lab5</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body >
+    
+    <div id="div1" style="overflow: auto;">
+        <div id="divX"> 
+            <input style="display: none;" value="Delete storage" type="submit" id="deleteStorage" onclick="return deleteLocalStorage()">
+             <h1 id="textX">Lab 5</h1>
+            </div>
+        <div class="divtext6">
+            <div id="main-cont1">
+                <p id="text1" onclick="changeText()">Lorem ipsum dolor sit amet TEXT 1</p>
+                <p id="createlist1" onclick="return createForm('form1', 'createlist1')">Click here to create list</p>
+                <form  id="form1" name="form1" class="ol-forms">
+                    <input type="text"  id="addelement1" name="addelement1">
+                    <input type="submit" id="addbtn1" name="addbtn1" value="add" onclick="return addElement('list1')">
+                    <input type="submit" id="finishbtn1" name="finishbtn1" value="finish" onclick="return createList('list1', 'btnStorage1', 'finishbtn1', 'addbtn1')">
+                </form>
+            </div>
+            <ol id="list1"></ol>
+                  <input class="storage-btn" id="btnStorage1" type="submit" onclick="return addToStorage('list1', 'btnStorage1')">
+            </div>
+    </div>
+    <div id="centralContainer">
+        <div id="div235">
+            <div id="div2" style="overflow: auto;">
+                <div id="main-cont2">
+                    <p id="text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aspernatur similique, nesciunt adipisci possimus cupiditate ducimus nisi corrupti eum dolorem dignissimos ea iure, labore magni explicabo iusto minus distinctio natus.</p>
+                    <p id="createlist2" onclick="return createForm('form2', 'createlist2')">Click here to create list</p>
+                    <form id="italicForm"> 
+                    <p>Select if you want to change text</p>
+                    <div>
+                        <input type="radio" name="radiobtn" onclick="return setMouseOver()">
+                        <label id="radiolabel" for="radiobtn">mousover</label>
+                    </div>
+                  </form>
+                  <form  id="form2" name="form2" class="ol-forms">
+                      <input type="text" id="addelement2" name="addelement2">
+                      <input type="submit" id="addbtn2" name="addbtn2" value="add" onclick="return addElement('list2')">
+                      <input type="submit" id="finishbtn2" name="finishbtn2" value="finish" onclick="return createList('list2', 'btnStorage2', 'finishbtn2', 'addbtn2')">
+                  </form>
+                </div>
+                
+                  <ol id="list2"></ol>
+                  <input class="storage-btn" id="btnStorage2" type="submit" onclick="return addToStorage('list2', 'btnStorage2')">
+            </div>
+            <div id="div3" style="overflow: auto;">
+                <div id="main-cont3">
+                    <p id="text3"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste alias nemo vitae doloribus dignissimos voluptatem laudantium quidem ratione? Assumenda ratione officiis, vero facere consectetur eligendi cumque rerum quo ad quas.</p>
+                    <form name ="form-triangle" id="form-triangle" onsubmit="return getTriangle()">
+                    <div class="container">
+                    <div class="row">
+                        
+                            
+                            <div class="col-md-4 col-12">
+                                <select name="selectA" id="selectA" class="form-select" aria-label="A" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <select name="selectB" id="selectB" class="form-select" aria-label="B" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <select name="selectC" id="selectC" class="form-select" aria-label="C" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <input type="submit" value="Save">
+                            </div>
+                        
+                           
+    
+                       
+                    </div>
+                </div>
+            </form>
+                   <div><p id="result"></p></div>
+                   <p id="createlist3" onclick="return createForm('form3', 'createlist3')">Click here to create list</p>
+                   <form  id="form3" name="form3" class="ol-forms">
+                    <input type="text" id="addelement3" name="addelement3">
+                    <input type="submit" id="addbtn3" name="addbtn3" value="add" onclick="return addElement('list3')">
+                    <input type="submit" id="finishbtn3" name="finishbtn3" value="finish" onclick="return createList('list3', 'btnStorage3', 'finishbtn3', 'addbtn3')">
+                </form>
+                </div>
+               
+                <ol id="list3"></ol>
+                <input class="storage-btn" id="btnStorage3" type="submit" onclick="return addToStorage('list3', 'btnStorage3')">
+              </div>
+              
+                
+                
+            </div>
+            <div id="div5" style="overflow: auto;">
+                <div id="main-cont5">
+                    <p id="text5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nobis iste quaerat.</p>
+                    <p id="createlist5" onclick="return createForm('form5', 'createlist5')">Click here to create list</p>
+                    <form  id="form5" name="form5" class="ol-forms">
+                        <input type="text"  id="addelement5" name="addelement5">
+                        <input type="submit" id="addbtn5" name="addbtn5" value="add" onclick="return addElement('list5')">
+                        <input type="submit" id="finishbtn5" name="finishbtn5" value="finish" onclick="return createList('list5', 'btnStorage5', 'finishbtn5', 'addbtn5')">
+                    </form>
+                </div>
+                <ol id="list5"></ol>
+                <input class="storage-btn" id="btnStorage5" type="submit" onclick="return addToStorage('list5', 'btnStorage5')">
+            </div>
+            <div id="div4" style="overflow: auto;">
+                <div id="main-cont4">
+                    <p id="text4" onclick="return createList('list4', 10)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laboriosam quam accusamus sed maxime, blanditiis illo consectetur dicta explicabo eligendi, animi officiis quo repellat cumque eaque. Ratione commodi in dicta?</p>
+                    <p id="createlist4" onclick="return createForm('form4', 'createlist4')">Click here to create list</p>
+                    <form  id="form4" name="form4" class="ol-forms">
+                        <input type="text" value="" id="addelement4" name="addelement4">
+                        <input type="submit" id="addbtn4" name="addbtn4" value="add" onclick="return addElement('list4')">
+                        <input type="submit" id="finishbtn4" name="finishbtn4" value="finish" onclick="return createList('list4', 'btnStorage4', 'finishbtn4', 'addbtn4')">
+                    </form>
+                </div>
+                <ol id="list4"></ol>
+                <input class="storage-btn" id="btnStorage4" type="submit" onclick="return addToStorage('list4', 'btnStorage4')">
+                
+                </div>
+        </div>
+        
+    </div>
+    
+    <div id="div6" style="overflow: auto;">
+        <div id="divY"><h1 id="textY">Lorem Ipsum</h1></div>
+        <div class="divtext6" >
+            <div id="main-cont6" > 
+                
+                <p id="text6" onclick="changeText()">Lorem ipsum dolor sit amet TEXT 6</p>
+                <p id="createlist6" onclick="return createForm('form6', 'createlist6')">Click here to create list</p>
+                <form  id="form6" name="form6" class="ol-forms">
+                    <input type="text" value="" id="addelement6" name="addelement6">
+                    <input type="submit" id="addbtn6" name="addbtn6" value="add" onclick="return addElement('list6')">
+                    <input type="submit" id="finishbtn6" name="finishbtn6" value="finish" onclick="return createList('list6', 'btnStorage6', 'finishbtn6', 'addbtn6')">
+                </form>
+            </div>
+            <ol id="list6"></ol>
+                <input class="storage-btn" id="btnStorage6" type="submit" onclick="return addToStorage('list6', 'btnStorage6')">
+           </div>
+    </div>
+    <script src="js/mainscript.js"></script>
+</body>
+</html>
